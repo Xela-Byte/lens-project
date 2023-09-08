@@ -31,7 +31,8 @@ export default function RootLayout({
   return (
     <html>
       <Head>
-        <title>Wallet Lens</title>
+        <title>Wallet Street Lens</title>
+        <meta property="og:title" content="Wallet Street Lens" key="title" />
         <meta name="description" content="Wallet Lens Street, stock" />
       </Head>
       <body className={nunito.className}>

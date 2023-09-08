@@ -18,7 +18,8 @@ export default function Home() {
   return (
     <main className="darok:bg-black 2xl:max-w-[1720px] xl:max-w-[1240px] sm:max-w-full max-w-[358px] mx-auto px-0 sm:px-6 darok:text-gray-100 min-h-screen">
       <Head>
-        <title>{"Home"}</title>
+        <title>Home</title>
+        <meta property="og:title" content="Home" key="title" />
       </Head>
       <div
         className=" w-full h-auto 2xl:max-w-[1720px] xl:max-w-[1240px] max-w-[358px] sm:max-w-full 
