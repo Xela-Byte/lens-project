@@ -1,6 +1,6 @@
 import { fetchAPI } from "@/utils/fetch-api";
 import { createAsyncThunk } from "@reduxjs/toolkit";
-import { setGlobalData } from "../features/dataSlice";
+import { StateType, setGlobalData } from "../features/dataSlice";
 
 async function getGlobal(): Promise<any> {
   const token = process.env.NEXT_PUBLIC_STRAPI_API_TOKEN;
@@ -31,7 +31,7 @@ export const fetchGlobalData = createAsyncThunk(
   "fetchGlobalData",
   async (_, { dispatch }) => {
     const global = await getGlobal();
-
     dispatch(setGlobalData(global));
+    return global as StateType["globalData"];
   }
 );

@@ -1,9 +1,30 @@
-import { configureStore } from "@reduxjs/toolkit";
+import { AnyAction, Store, configureStore } from "@reduxjs/toolkit";
 import { globalData } from "./features/dataSlice";
-import storage from "redux-persist/lib/storage";
+
 import { persistReducer, persistStore } from "redux-persist";
 
-import thunk from "redux-thunk";
+import thunk, { ThunkDispatch } from "redux-thunk";
+
+import createWebStorage from "redux-persist/lib/storage/createWebStorage";
+
+const createNoopStorage = () => {
+  return {
+    getItem(_key: any) {
+      return Promise.resolve(null);
+    },
+    setItem(_key: any, value: any) {
+      return Promise.resolve(value);
+    },
+    removeItem(_key: any) {
+      return Promise.resolve();
+    },
+  };
+};
+
+const storage =
+  typeof window !== "undefined"
+    ? createWebStorage("local")
+    : createNoopStorage();
 
 const persistConfig = {
   key: "root",
@@ -22,5 +43,14 @@ export const store = configureStore({
 
 export const persistor = persistStore(store);
 
-export type RootState = ReturnType<typeof store.getState>;
 export type AppDispatch = typeof store.dispatch;
+// 1. Get the root state's type from reducers
+export type RootState = ReturnType<typeof persistReducer>;
+
+// 2. Create a type for thunk dispatch
+export type AppThunkDispatch = ThunkDispatch<RootState, any, AnyAction>;
+
+// 3. Create a type for store using RootState and Thunk enabled dispatch
+export type AppStore = Omit<Store<RootState, AnyAction>, "dispatch"> & {
+  dispatch: AppThunkDispatch;
+};
