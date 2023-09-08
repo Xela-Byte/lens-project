@@ -304,7 +304,9 @@ export default function Home() {
         <LatestNews sortBy="date" />
       </div>
       <div className="mt-20 hidden bg-black w-full h-[166px] rounded-xl md:flex justify-center items-center relative p-[32px]">
-        <img
+        <Image
+          width={100}
+          height={166}
           className="h-[166px] w-auto absolute top-0 right-[20%]"
           src="/vector-300.svg"
           alt="HomeIcon"

@@ -1,3 +1,5 @@
+"use client";
+
 import { fetchAPI } from "@/utils/fetch-api";
 import { Company } from "@/utils/model";
 import Head from "next/head";
@@ -58,8 +60,10 @@ export default function CompanyPage() {
         <div className="mt-[24px] bg-gray-200 rounded-xl h-[600px] w-full" />
       </main>
     );
-  else if (data.length === 0 || !data[0]?.attributes) return <Skeleton />;
-  return (
+
+  return !data ? (
+    <Skeleton />
+  ) : (
     <main className="darok:bg-black 2xl:max-w-[1720px] xl:max-w-[1240px] sm:max-w-full max-w-[358px] mx-auto px-0 sm:px-6 darok:text-gray-100 min-h-screen">
       <Head>
         <title>{data[0].attributes.name}</title>

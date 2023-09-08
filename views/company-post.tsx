@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { formatDate, getStrapiMedia } from "../utils/api-helpers";
 import { postRenderer } from "../utils/post-renderer";
 import { CgWebsite } from "react-icons/cg";
@@ -9,6 +8,8 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import { AiFillYoutube } from "react-icons/ai";
+import Image from "next/image";
+import Link from "next/link";
 
 interface Article {
   id: number;
@@ -68,7 +69,7 @@ export default function CompanyPost({ data }: { data: Article }) {
         <div className="w-full h-auto col-span-3">
           <div className="w-full h-[120px] flex items-center">
             <Link
-              to={"/about"}
+              href={"/about"}
               className="text-[#717172] text-[18px] font-medium">
               Portfolio
             </Link>
@@ -112,7 +113,7 @@ export default function CompanyPost({ data }: { data: Article }) {
           </div>
           <div className="w-full h-auto rounded-xl flex">
             {imageUrl && (
-              <img
+              <Image
                 src={imageUrl}
                 alt="article cover image"
                 width={400}

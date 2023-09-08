@@ -1,4 +1,18 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {}
+const hostnames = [
+  "images.unsplash.com",
+  "images.pexels.com",
+  "api.wallstreetlens.com",
+];
 
-module.exports = nextConfig
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
+  images: {
+    remotePatterns: hostnames.map((hostname) => ({
+      protocol: "https",
+      hostname,
+    })),
+  },
+};
+
+module.exports = nextConfig;

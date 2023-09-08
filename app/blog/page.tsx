@@ -1,3 +1,5 @@
+"use client";
+
 import { fetchAPI } from "@/utils/fetch-api";
 import { useCallback, useEffect, useState } from "react";
 
@@ -65,17 +67,18 @@ export default function BlogPage() {
     <div>
       <PageHeader heading="Our Blog" text="Checkout Something Cool" />
       <Blog data={data}>
-        {meta!.pagination.start + meta!.pagination.limit <
-          meta!.pagination.total && (
-          <div className="flex justify-center">
-            <button
-              type="button"
-              className="px-6 py-3 text-sm rounded-lg hover:underline darok:bg-gray-900 darok:text-gray-400"
-              onClick={loadMorePosts}>
-              Load more posts...
-            </button>
-          </div>
-        )}
+        {meta &&
+          meta!.pagination.start + meta!.pagination.limit <
+            meta!.pagination.total && (
+            <div className="flex justify-center">
+              <button
+                type="button"
+                className="px-6 py-3 text-sm rounded-lg hover:underline darok:bg-gray-900 darok:text-gray-400"
+                onClick={loadMorePosts}>
+                Load more posts...
+              </button>
+            </div>
+          )}
       </Blog>
     </div>
   );

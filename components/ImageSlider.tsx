@@ -1,5 +1,6 @@
 import { Fade } from "react-slideshow-image";
 import { getStrapiMedia } from "../utils/api-helpers";
+import Image from "next/image";
 
 interface Image {
   id: number;
@@ -25,7 +26,7 @@ export default function Slideshow({ data }: { data: SlidShowProps }) {
           return (
             <div key={index}>
               {imageUrl && (
-                <img
+                <Image
                   className="w-full h-96 object-cover rounded-lg"
                   height={400}
                   width={600}

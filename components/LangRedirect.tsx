@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { renderButtonStyle } from "../utils/render-button-style";
 import HighlightedText from "./HighlightedText";
+import Image from "next/image";
 
 export default function LangRedirect() {
   return (
@@ -21,7 +22,7 @@ export default function LangRedirect() {
           </div>
         </div>
         <div className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
-          <img
+          <Image
             src="https://images.pexels.com/photos/409701/pexels-photo-409701.jpeg/quality=auto"
             alt="city view"
             className="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 "

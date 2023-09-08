@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Logo({
@@ -15,7 +16,7 @@ export default function Logo({
         href="/"
         aria-label="Back to homepage"
         className="flex items-center">
-        {src && <img src={src} alt="logo" width={24} height={24} />}
+        {src && <Image src={src} alt="logo" width={24} height={24} />}
         <div className="ml-3">
           {logoText && (
             <h2 className="md:text-[18px] text-[14px] font-bold">{logoText}</h2>

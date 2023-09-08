@@ -7,6 +7,7 @@ import SideSimilarArticles from "../components/SideSimilarArticles";
 import { getStrapiMedia } from "../utils/api-helpers";
 import { Article } from "../utils/model";
 import { postRenderer } from "../utils/post-renderer";
+import Image from "next/image";
 
 export default function Post({
   data,
@@ -104,7 +105,7 @@ export default function Post({
           </div>
           <div className="w-full h-auto rounded-xl flex mt-[16px]">
             {imageUrl && (
-              <img
+              <Image
                 src={imageUrl}
                 alt="article-cover"
                 width={400}
@@ -202,12 +203,16 @@ export default function Post({
             <></>
           )}
           <div className="mt-20 bg-black w-full lg:h-[166px] h-[252px] rounded-xl justify-center items-center relative p-[32px]">
-            <img
+            <Image
+              height={252}
+              width={100}
               className="lg:h-[166px] h-[252px] w-auto absolute top-0 right-[20%]"
               src="/vector-300.svg"
               alt="postIcon"
             />
-            <img
+            <Image
+              width={100}
+              height={252}
               className="lg:h-[166px] h-[252px] w-auto absolute bottom-0 right-0"
               src="/vector-301.svg"
               alt="postIcon"

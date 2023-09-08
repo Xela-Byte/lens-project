@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { formatDate, getStrapiMedia } from "../utils/api-helpers";
 import { Article } from "../utils/model";
+import Image from "next/image";
 
 export default function SideSimilarArticles({
   data: articles,
@@ -28,10 +29,10 @@ export default function SideSimilarArticles({
             key={article.id}
             className="w-full h-[98px] flex mb-[32px] cursor-pointer">
             {imageUrl ? (
-              <img
+              <Image
                 alt="presentation"
-                width="240"
-                height="240"
+                width={240}
+                height={240}
                 className="object-cover w-[116px] h-[98px] min-w-[116px] min-h-[98px] bg-[#cccccc] rounded-[8px] mr-[16px]"
                 src={imageUrl}
               />

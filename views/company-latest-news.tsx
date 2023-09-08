@@ -2,6 +2,7 @@ import Link from "next/link";
 import { getStrapiMedia, formatDate } from "../utils/api-helpers";
 import { Article } from "../utils/model";
 import { BsDatabaseX as NoDataIcon } from "react-icons/bs";
+import Image from "next/image";
 
 export default function CompanyLatesNewsSection({
   data: articles,
@@ -43,10 +44,10 @@ export default function CompanyLatesNewsSection({
             className="w-full 2xl:h-[361px] xl:h-[405px] h-[335px] bg-white rounded-xl xl:p-[16px] p-[8px]">
             <div className="w-full 2xl:h-[285px] xl:h-[329px] h-[279px] overflow-hidden text-container border-b-2 ">
               {imageUrl && (
-                <img
+                <Image
                   alt="presentation"
-                  width="240"
-                  height="240"
+                  width={240}
+                  height={240}
                   className="object-cover sm:w-full w-[358px] h-[187px] bg-[#cccccc] rounded-xl"
                   src={imageUrl}
                 />

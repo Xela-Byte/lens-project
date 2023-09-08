@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getStrapiMedia, formatDate } from "../utils/api-helpers";
 import { Article } from "../utils/model";
+import Image from "next/image";
 
 export default function LatestNewsSection({
   data: articles,
@@ -27,10 +28,10 @@ export default function LatestNewsSection({
               <div className="w-full 2xl:h-[285px] xl:h-[331px] h-[279px] overflow-hidden text-container border-b-2 ">
                 {imageUrl && (
                   <>
-                    <img
+                    <Image
                       alt="presentation"
-                      width="240"
-                      height="240"
+                      width={240}
+                      height={240}
                       className="object-cover sm:w-full w-[342px] h-[187px] bg-[#cccccc] rounded-xl"
                       src={imageUrl}
                     />
