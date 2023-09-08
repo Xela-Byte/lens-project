@@ -12,11 +12,7 @@ export default function Logo({
 }) {
   return (
     <div className="flex flex-col p-2 justify-center mr-10 ">
-      <Link
-        href="/"
-        role="link"
-        aria-label="Wall Street Lens"
-        className="flex items-center">
+      <Link href="/" className="flex items-center">
         {src && <Image src={src} alt="logo" width={24} height={24} />}
         <div className="ml-3">
           {logoText && (
