@@ -292,7 +292,7 @@ export default function MarketOverview() {
                   <p className="text-left  py-4 whitespace-nowrap font-medium">
                     Graph
                   </p>
-                  <select>
+                  <select aria-label="graph">
                     <option value="1d">1d</option>
                     <option>2d</option>
                     <option>3d</option>

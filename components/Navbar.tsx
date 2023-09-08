@@ -73,7 +73,7 @@ export default function Navbar({}: Props) {
           </div>
         </div>
 
-        <button className="p-4 md:hidden">
+        <button className="p-4 md:hidden" aria-label="hamburger_menu">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
