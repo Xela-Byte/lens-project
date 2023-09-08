@@ -14,7 +14,8 @@ export default function Logo({
     <div className="flex flex-col p-2 justify-center mr-10 ">
       <Link
         href="/"
-        aria-label="Wall Street Lens Back to homepage"
+        role="link"
+        aria-label="Wall Street Lens"
         className="flex items-center">
         {src && <Image src={src} alt="logo" width={24} height={24} />}
         <div className="ml-3">

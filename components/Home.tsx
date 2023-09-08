@@ -78,9 +78,9 @@ export default function Home() {
                 <div className="bg-white h-[38px] flex items-center justify-center rounded-tl-lg rounded-bl-lg px-4 mr-auto">
                   <p className="font-medium text-[14px]">APPL</p>
                 </div>
-                <h3 className="text-[#13B28C] w-[110px] font-semibold text-[14px] text-center">
+                <p className="text-[#13B28C] w-[110px] font-semibold text-[14px] text-center">
                   2.08%
-                </h3>
+                </p>
                 <div className="bg-white h-[38px] flex items-center justify-center rounded-tr-lg rounded-br-lg px-4 ml-auto">
                   <ArrowDRShirtIcon />
                 </div>
@@ -89,9 +89,9 @@ export default function Home() {
                 <div className="bg-white h-[38px] flex items-center justify-center rounded-tl-lg rounded-bl-lg px-4 mr-auto">
                   <p className="font-medium text-[14px]">APPL</p>
                 </div>
-                <h3 className="text-[#13B28C] w-[110px] font-semibold text-[14px] text-center">
+                <p className="text-[#13B28C] w-[110px] font-semibold text-[14px] text-center">
                   2.08%
-                </h3>
+                </p>
                 <div className="bg-white h-[38px] flex items-center justify-center rounded-tr-lg rounded-br-lg px-4 ml-auto">
                   <ArrowDRShirtIcon />
                 </div>
@@ -100,9 +100,9 @@ export default function Home() {
                 <div className="bg-white h-[38px] flex items-center justify-center rounded-tl-lg rounded-bl-lg px-4 mr-auto">
                   <p className="font-medium text-[14px]">APPL</p>
                 </div>
-                <h3 className="text-[#13B28C] w-[110px] font-semibold text-[14px] text-center">
+                <p className="text-[#13B28C] w-[110px] font-semibold text-[14px] text-center">
                   2.08%
-                </h3>
+                </p>
                 <div className="bg-white h-[38px] flex items-center justify-center rounded-tr-lg rounded-br-lg px-4 ml-auto">
                   <ArrowDRShirtIcon />
                 </div>
@@ -111,9 +111,9 @@ export default function Home() {
                 <div className="bg-white h-[38px] flex items-center justify-center rounded-tl-lg rounded-bl-lg px-4 mr-auto">
                   <p className="font-medium text-[14px]">APPL</p>
                 </div>
-                <h3 className="text-[#13B28C] w-[110px] font-semibold text-[14px] text-center">
+                <p className="text-[#13B28C] w-[110px] font-semibold text-[14px] text-center">
                   2.08%
-                </h3>
+                </p>
                 <div className="bg-white h-[38px] flex items-center justify-center rounded-tr-lg rounded-br-lg px-4 ml-auto">
                   <ArrowDRShirtIcon />
                 </div>
@@ -122,9 +122,9 @@ export default function Home() {
                 <div className="bg-white h-[38px] flex items-center justify-center rounded-tl-lg rounded-bl-lg px-4 mr-auto">
                   <p className="font-medium text-[14px]">APPL</p>
                 </div>
-                <h3 className="text-[#13B28C] w-[110px] font-semibold text-[14px] text-center">
+                <p className="text-[#13B28C] w-[110px] font-semibold text-[14px] text-center">
                   2.08%
-                </h3>
+                </p>
                 <div className="bg-white h-[38px] flex items-center justify-center rounded-tr-lg rounded-br-lg px-4 ml-auto">
                   <ArrowDRShirtIcon />
                 </div>
@@ -133,36 +133,36 @@ export default function Home() {
                 <div className="bg-white h-[38px] flex items-center justify-center rounded-tl-lg rounded-bl-lg px-4 mr-auto">
                   <p className="font-medium text-[14px]">APPL</p>
                 </div>
-                <h3 className="text-[#13B28C] w-[110px] font-semibold text-[14px] text-center">
+                <p className="text-[#13B28C] w-[110px] font-semibold text-[14px] text-center">
                   2.08%
-                </h3>
+                </p>
                 <div className="bg-white h-[38px] flex items-center justify-center rounded-tr-lg rounded-br-lg px-4 ml-auto">
                   <ArrowDRShirtIcon />
                 </div>
               </div>
               {/* <div className=" sm:w-[226px] h-[38px] rounded-lg bg-[#D2F8CC] flex items-center w-[159px]">
                 <div className="bg-white h-[38px] flex items-center justify-center rounded-tl-lg rounded-bl-lg px-4 mr-auto">
-                  <p className="font-medium text-[14px]">APPL</h3>
+                  <p className="font-medium text-[14px]">APPL</p>
                 </div>
-                <h3 className="text-[#13B28C] w-[110px] font-semibold text-[14px] text-center">2.08%</h3>
+                <p className="text-[#13B28C] w-[110px] font-semibold text-[14px] text-center">2.08%</p>
                 <div className="bg-white h-[38px] flex items-center justify-center rounded-tr-lg rounded-br-lg px-4 ml-auto">
                   <ArrowDRShirtIcon />
                 </div>
               </div>
               <div className=" sm:w-[226px] h-[38px] rounded-lg bg-[#D2F8CC] flex items-center w-[159px]">
                 <div className="bg-white h-[38px] flex items-center justify-center rounded-tl-lg rounded-bl-lg px-4 mr-auto">
-                  <p className="font-medium text-[14px]">APPL</h3>
+                  <p className="font-medium text-[14px]">APPL</p>
                 </div>
-                <h3 className="text-[#13B28C] w-[110px] font-semibold text-[14px] text-center">2.08%</h3>
+                <p className="text-[#13B28C] w-[110px] font-semibold text-[14px] text-center">2.08%</p>
                 <div className="bg-white h-[38px] flex items-center justify-center rounded-tr-lg rounded-br-lg px-4 ml-auto">
                   <ArrowDRShirtIcon />
                 </div>
               </div>
               <div className="flex max-[1200px]:hidden w-[226px] h-[38px] rounded-lg bg-[#D2F8CC] items-center">
                 <div className="bg-white h-[38px] flex items-center justify-center rounded-tl-lg rounded-bl-lg px-4 mr-auto">
-                  <p className="font-medium text-[14px]">APPL</h3>
+                  <p className="font-medium text-[14px]">APPL</p>
                 </div>
-                <h3 className="text-[#13B28C] w-[110px] font-semibold text-[14px] text-center">2.08%</h3>
+                <p className="text-[#13B28C] w-[110px] font-semibold text-[14px] text-center">2.08%</p>
                 <div className="bg-white h-[38px] flex items-center justify-center rounded-tr-lg rounded-br-lg px-4 ml-auto">
                   <ArrowDRShirtIcon />
                 </div>
@@ -183,8 +183,8 @@ export default function Home() {
           <div className="w-full h-[84px] rounded-lg bg-[#E4572E] pl-1">
             <div className="w-full h-full bg-white rounded-tr-lg rounded-br-lg">
               <div className="flex items-center p-3">
-                <h3 className="text-[14px] font-normal mr-auto">DOW JONES</h3>
-                <h3 className="text-[14px] font-normal ml-auto">37400</h3>
+                <p className="text-[14px] font-normal mr-auto">DOW JONES</p>
+                <p className="text-[14px] font-normal ml-auto">37400</p>
               </div>
               <div className="flex items-center px-3">
                 <div className="flex items-center rounded-[4px] bg-[#FFD3C6] px-[4px]">
@@ -205,8 +205,8 @@ export default function Home() {
           <div className="w-full h-[84px] rounded-lg bg-[#13B28C] pl-1">
             <div className="w-full h-full bg-white rounded-tr-lg rounded-br-lg">
               <div className="flex items-center p-3">
-                <h3 className="text-[14px] font-normal mr-auto">S&P500</h3>
-                <h3 className="text-[14px] font-normal ml-auto">37400</h3>
+                <p className="text-[14px] font-normal mr-auto">S&P500</p>
+                <p className="text-[14px] font-normal ml-auto">37400</p>
               </div>
               <div className="flex items-center px-3">
                 <div className="flex items-center rounded-[4px] bg-[#D2F8CC] px-[4px]">
@@ -227,8 +227,8 @@ export default function Home() {
           <div className="w-full h-[84px] rounded-lg bg-[#13B28C] pl-1">
             <div className="w-full h-full bg-white rounded-tr-lg rounded-br-lg">
               <div className="flex items-center p-3">
-                <h3 className="text-[14px] font-normal mr-auto">S&P500</h3>
-                <h3 className="text-[14px] font-normal ml-auto">37400</h3>
+                <p className="text-[14px] font-normal mr-auto">S&P500</p>
+                <p className="text-[14px] font-normal ml-auto">37400</p>
               </div>
               <div className="flex items-center px-3">
                 <div className="flex items-center rounded-[4px] bg-[#D2F8CC] px-[4px]">
@@ -249,8 +249,8 @@ export default function Home() {
           <div className="w-full h-[84px] rounded-lg bg-[#E4572E] pl-1">
             <div className="w-full h-full bg-white rounded-tr-lg rounded-br-lg">
               <div className="flex items-center p-3">
-                <h3 className="text-[14px] font-medium mr-auto">DOW JONES</h3>
-                <h3 className="text-[14px] font-normal ml-auto">37400</h3>
+                <p className="text-[14px] font-medium mr-auto">DOW JONES</p>
+                <p className="text-[14px] font-normal ml-auto">37400</p>
               </div>
               <div className="flex items-center px-3">
                 <div className="flex items-center rounded-[4px] bg-[#FFD3C6] px-[4px]">
@@ -271,8 +271,8 @@ export default function Home() {
           <div className="w-full h-[84px] rounded-lg bg-[#13B28C] pl-1">
             <div className="w-full h-full bg-white rounded-tr-lg rounded-br-lg">
               <div className="flex items-center p-3">
-                <h3 className="text-[14px] font-normal mr-auto">S&P500</h3>
-                <h3 className="text-[14px] font-normal ml-auto">37400</h3>
+                <p className="text-[14px] font-normal mr-auto">S&P500</p>
+                <p className="text-[14px] font-normal ml-auto">37400</p>
               </div>
               <div className="flex items-center px-3">
                 <div className="flex items-center rounded-[4px] bg-[#D2F8CC] px-[4px]">
