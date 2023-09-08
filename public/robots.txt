@@ -1,0 +1,6 @@
+# Robots.txt generated at Thu Aug 17 2023 07:05:21 GMT-0500 (Central Daylight Time)
+User-agent: *
+
+Disallow: /api/
+Disallow: /login
+Sitemap: https://wallstreetlens.com/sitemap.xml
