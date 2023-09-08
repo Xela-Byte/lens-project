@@ -5,6 +5,7 @@ import { useCallback, useEffect, useState } from "react";
 
 import PageHeader from "@/components/PageHeader";
 import Blog from "@/views/blog-list";
+import Head from "next/head";
 
 interface Meta {
   pagination: {
@@ -65,6 +66,10 @@ export default function BlogPage() {
 
   return (
     <div>
+      <Head>
+        <title>Blog</title>
+        <meta property="og:title" content="Home" key="title" />
+      </Head>
       <PageHeader heading="Our Blog" text="Checkout Something Cool" />
       <Blog data={data}>
         {meta &&
