@@ -19,6 +19,7 @@ export const AppWrapper = ({ children }: { children: ReactNode }) => {
       <PersistGate loading={null} persistor={persistor}>
         <Script
           async
+          defer
           src="https://www.googletagmanager.com/gtag/js?id=G-0J1NSHDGTG"
         />
         <Script

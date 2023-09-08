@@ -21,9 +21,12 @@ export default function Home() {
         <title>Home</title>
         <meta property="og:title" content="Home" key="title" />
       </Head>
+      <h1 className="text-[36px] leading-[44px] font-semibold text-black md:mt-8">
+        Wall Street Lens
+      </h1>
       <div
         className=" w-full h-auto 2xl:max-w-[1720px] xl:max-w-[1240px] max-w-[358px] sm:max-w-full 
-        justify-between mx-auto p-[24px] md:mt-16 mt-[27px] rounded-xl ml-auto mr-auto bg-gradient-to-r from-[#E4572E] 
+        justify-between mx-auto p-[24px] mt-[27px] rounded-xl ml-auto mr-auto bg-gradient-to-r from-[#E4572E] 
         from-50% to-90% to-[#248FF4] lg:flex items-center relative">
         <Image
           src={"/vector-122.svg"}
