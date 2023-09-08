@@ -5,7 +5,13 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Wall Street Lens",
-  description: "Wall street lens, stock",
+  description:
+    "Web site is stock website. Web site created using create-react-app",
+  viewport: "width=device-width, initial-scale=1",
+  themeColor: "#000000",
+  keywords: "Wall Street Lens, stock",
+  icons: "/Logo.png",
+  manifest: "/manifest.json",
 };
 
 const nunito = Nunito_Sans({ subsets: ["latin"] });
@@ -16,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html>
+    <html lang="en">
       <body className={nunito.className}>
         <AppWrapper>{children}</AppWrapper>
       </body>

@@ -7,6 +7,7 @@ import { PersistGate } from "redux-persist/integration/react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { fetchGlobalData } from "@/stateManagement/actions/fetchGlobalData";
+import Script from "next/script";
 
 export const AppWrapper = ({ children }: { children: ReactNode }) => {
   useEffect(() => {
@@ -15,6 +16,11 @@ export const AppWrapper = ({ children }: { children: ReactNode }) => {
   return (
     <Providers>
       <PersistGate loading={null} persistor={persistor}>
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-0J1NSHDGTG"
+        />
+        <Script src="../utils/tag-manager-script.ts" />
         <Navbar />
         {children}
         <Footer />
