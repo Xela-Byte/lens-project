@@ -15,6 +15,7 @@ import { useEffect } from "react";
 import { PersistGate } from "redux-persist/integration/react";
 import "./globals.css";
 import { useDispatch } from "react-redux";
+import Head from "next/head";
 
 const nunito = Nunito_Sans({ subsets: ["latin"] });
 
@@ -29,6 +30,10 @@ export default function RootLayout({
 
   return (
     <html>
+      <Head>
+        <title>Wallet Lens</title>
+        <meta name="description" content="Wallet Lens Street, stock" />
+      </Head>
       <body className={nunito.className}>
         <Providers>
           <PersistGate loading={null} persistor={persistor}>
