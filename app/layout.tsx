@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   useEffect(() => {
-    store.dispatch<AppDispatch>(fetchGlobalData());
+    store.dispatch(fetchGlobalData());
   }, [store.dispatch]);
 
   return (
