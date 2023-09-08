@@ -1,14 +1,12 @@
-"use client";
-
-import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
-import { fetchGlobalData } from "@/stateManagement/actions/fetchGlobalData";
-import { Providers } from "@/stateManagement/provider";
-import { persistor, store } from "@/stateManagement/store";
+import { AppWrapper } from "@/components/AppWrapper";
 import { Nunito_Sans } from "next/font/google";
-import { useEffect } from "react";
-import { PersistGate } from "redux-persist/integration/react";
 import "./globals.css";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Wall Street Lens",
+  description: "Wall street lens, stock",
+};
 
 const nunito = Nunito_Sans({ subsets: ["latin"] });
 
@@ -17,20 +15,10 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  useEffect(() => {
-    store.dispatch<any>(fetchGlobalData());
-  }, [store.dispatch]);
-
   return (
     <html>
       <body className={nunito.className}>
-        <Providers>
-          <PersistGate loading={null} persistor={persistor}>
-            <Navbar />
-            {children}
-            <Footer />
-          </PersistGate>
-        </Providers>
+        <AppWrapper>{children}</AppWrapper>
       </body>
     </html>
   );
